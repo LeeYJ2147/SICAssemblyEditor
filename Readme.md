@@ -43,8 +43,9 @@ Assembly나 Simulate 기능 등 SICEditor.exe에서 이제 지원하지 않는 �
 # 1. 설치 방법
 
 ## 1.1. 폴더 배열 방법
-이 레포지토리 전체를 ZIP file로 다운로드하여 주십시오.
-그 후에 압축을 풀고, .app file을 수업에서 제공받은 sic.zip을 푼 장소에 위치시켜 주십시오.
+이 레포지토리 전체를 ZIP file로 다운로드하여 주십시오.  
+지금은 folder로 보이는데, 압축을 풀면 'SIC Assembly Editor.app'이 나올 겁니다.  
+이 .app file을 수업에서 제공받은 sic.zip을 푼 장소에 위치시켜 주십시오.  
 그리고 '~/Applications' 위치에 'DOSBox.app'을 위치시켜 주십시오.
 
 # 2. 사용 방법
@@ -68,27 +69,72 @@ Shift+Enter을 누를 시 윗칸으로 이동(맨 윗칸이면 움직이지 않�
 (0, 0)에서 키보드 커서가 깜빡일 때 Save 버튼을 누르면...  
 (0, 0)칸의 수정 사항은 **SRCFILE에 저장**되지 않습니다.
 
+
 - **Append 버튼**
+Append 버튼을 클릭할 시  
+표의 맨 마지막에 한 줄을 추가합니다.
 
 - **Insert 버튼**
+Insert 버튼을 클릭할 시  
+현재 선택된 Cell의 줄 바로 밑에 한 줄을 추가합니다.
 
 - **Delete 버튼**
+Delete 버튼을 클릭할 시  
+현재 선택된 Cell 한 줄을 삭제합니다.
 
 - **Clear 버튼**
+Clear 버튼을 클릭할 시  
+작성한 표 전체가 삭제됩니다.  
+SRCFILE은 삭제되지 않습니다.
+
 
 ### 2.1.2. Object Tab
+![ObjectTab](https://github.com/user-attachments/assets/dde09603-acbb-4a3b-80e4-772024ca7c99)
+Object Tab에서는 DEVF2를 조회할 수 있습니다.  
+다른 기능은 없습니다.
+
 
 ### 2.1.3. Listing Tab
+![ListingTab](https://github.com/user-attachments/assets/642eeea3-62a0-45b3-9c6d-0c3e1250dd40)
+Listing Tab에서는 LISFILE을 조회할 수 있습니다.  
+다른 기능은 없습니다.
+
 
 ### 2.1.4. Working Tab
+![WorkingTab](https://github.com/user-attachments/assets/642eeea3-62a0-45b3-9c6d-0c3e1250dd40)
+Working Tab에서는 INTFILE을 조회할 수 있습니다.  
+다른 기능은 없습니다.
+
 
 ### 2.1.5. 상단 버튼
+상단 버튼, 이하 Refresh, Save, Assemble, Simulate, Close 버튼 총 5개의 기능 설명입니다.
 
 #### Refresh
+Refresh 버튼을 누를 시  
+SRCFILE, DEVF2, LISFILE, INTFILE을 새로 불러옵니다.
+
+만일 Assemble 등을 실행해서 DEVF2, LISFILE, INTFILE의 변화를 보고 싶으시다면  
+Refresh 버튼을 꼭 누르셔야 바뀝니다.
+
 
 #### Save
+Save 버튼을 누를 시  
+지금까지 바뀐 SRCFILE을 저장합니다.
+
 
 #### Assemble
+Assemble 버튼을 누를 시  
+
+(1) 만일 DOSBox가 열려있지 않은 경우
+DOSBox를 실행하여 SICASM.exe를 실행하고,  
+일련의 과정(del devf2, ren objfile devf2, l2u devf2 등)을 자동으로 수행한 뒤,  
+DOSBox를 닫습니다.
+
+(2) 만일 DOSBox가 이미 열려있는 경우
+x 디스크를 할당하여 SICASM.exe를 실행하고,  
+일련의 과정(del devf2, ren objfile devf2, l2u devf2 등)을 자동으로 수행한 뒤,  
+x 디스크 할당을 해제하고 DOSBox를 종료하지는 않습니다.
+
 
 #### Simulate
 
