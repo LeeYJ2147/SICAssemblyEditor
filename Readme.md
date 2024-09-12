@@ -15,28 +15,49 @@ Assembly나 Simulate 기능 등 SICEditor.exe에서 이제 지원하지 않는 �
     1) [폴더 배열 방법](#폴더-배열-방법)
 2. [실행 방법](#실행-방법)
     1) [Main Window](#Main-Window)
+
         A. [Source Tab](#Source-Tab)
+
         B. [Object Tab](#Object-Tab)
+
         C. [Listing Tab](#Listing-Tab)
+
         D. [Working Tab](#Working-Tab)
+
         E. [상단 버튼](#상단-버튼)
+
             a. [Refresh](#Refresh)
+
             b. [Save](#Save)
+
             c. [Assemble](#Assemble)
+
             d. [Simulate](#Simulate)
+
             e. [Close](#Close)
     2) [Simulate Window](#Simulate-Window)
+
         A. [저장 경로](#저장-경로)
+
         B. [DOSBox 상태](#DOSBox-상태)
+
         C. [명령어 매크로](#명령어-매크로)
+
         D. [스크린샷](#스크린샷)
+
         E. [상단 버튼](#상단-버튼)
+
             a. [Refresh](#Refresh)
+
             b. [Save](#Save)
+
             c. [Init](#Init)
     3) [권한 설정](#권한-설정)
+
         A. [access files](#access-files)
+
         B. [Screen Recording](#Screen-Recording)
+
         C. [Accessibility Access](#Accessibility-Access)
 
 
