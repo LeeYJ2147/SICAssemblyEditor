@@ -101,7 +101,7 @@ Listing Tab에서는 LISFILE을 조회할 수 있습니다.
 
 
 ### 2.1.4. Working Tab
-![WorkingTab](https://github.com/user-attachments/assets/642eeea3-62a0-45b3-9c6d-0c3e1250dd40)
+![WorkingTab](https://github.com/user-attachments/assets/edce99f5-d78e-482b-8595-90ab70bb6e6a)
 Working Tab에서는 INTFILE을 조회할 수 있습니다.  
 다른 기능은 없습니다.
 
@@ -137,6 +137,8 @@ x 디스크 할당을 해제하고 DOSBox를 종료하지는 않습니다.
 
 
 #### Simulate
+Simulate 버튼을 누를 시  
+
 
 #### Close
 
