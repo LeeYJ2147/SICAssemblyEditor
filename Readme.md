@@ -8,114 +8,88 @@ Assembly나 Simulate 기능 등 SICEditor.exe에서 이제 지원하지 않는 �
 설치 방법과 사용 방법은 아래 목차부터 봐주시기 바랍니다.
 각 목차 제목을 클릭하시면 하이퍼링크로 연결됩니다.
 
-- - -
+# 목차
+1. [설치 방법](#1.-설치-방법)
+    1.1. [폴더 배열 방법](#1.1.-폴더-배열-방법)
+2. [실행 방법](#2.-실행-방법)
+    2.1. [Main Window](#2.1.-Main-Window)
+        2.1.1. [Source Tab](#2.1.1.-Source-Tab)
+        2.1.2. [Object Tab](#2.1.2.-Object-Tab)
+        2.1.3. [Listing Tab](#2.1.3.-Listing-Tab)
+        2.1.4. [Working Tab](#2.1.4.-Working-Tab)
+        2.1.5. [상단 버튼](#2.1.5.-상단-버튼)
+            1) [Refresh](#Refresh)
+            2) [Save](#Save)
+            3) [Assemble](#Assemble)
+            4) [Simulate](#Simulate)
+            5) [Close](#Close)
+    2.2. [Simulate Window](#2.2.-Simulate-Window)
+        2.2.1. [저장 경로](#2.2.1.-저장-경로)
+        2.2.2. [DOSBox 상태](#2.2.2.-DOSBox-상태)
+        2.2.3. [명령어 매크로](#2.2.3.-명령어-매크로)
+        2.2.4. [스크린샷](#2.2.4.-스크린샷)
+        2.2.5. [상단 버튼](#2.2.5.-상단-버튼)
+            1) [Refresh](#Refresh)
+            2) [Save](#Save)
+            3) [Init](#Init)
+    2.3. [권한 설정](#2.3.-권한-설정)
+        2.3.1. [access files](#2.3.1.-access-files)
+        2.3.2. [Screen Recording](#2.3.2.-Screen-Recording)
+        2.3.3. [Accessibility Access](#2.3.3.-Accessibility-Access)
 
-## 목차
-1. [설치 방법](#설치-방법)
-    1) [폴더 배열 방법](#폴더-배열-방법)
-2. [실행 방법](#실행-방법)
-    1) [Main Window](#Main-Window)
+# 설치 방법
 
-        A. [Source Tab](#Source-Tab)
-
-        B. [Object Tab](#Object-Tab)
-
-        C. [Listing Tab](#Listing-Tab)
-
-        D. [Working Tab](#Working-Tab)
-
-        E. [상단 버튼](#상단-버튼)
-
-            a. [Refresh](#Refresh)
-
-            b. [Save](#Save)
-
-            c. [Assemble](#Assemble)
-
-            d. [Simulate](#Simulate)
-
-            e. [Close](#Close)
-    2) [Simulate Window](#Simulate-Window)
-
-        A. [저장 경로](#저장-경로)
-
-        B. [DOSBox 상태](#DOSBox-상태)
-
-        C. [명령어 매크로](#명령어-매크로)
-
-        D. [스크린샷](#스크린샷)
-
-        E. [상단 버튼](#상단-버튼)
-
-            a. [Refresh](#Refresh)
-
-            b. [Save](#Save)
-
-            c. [Init](#Init)
-    3) [권한 설정](#권한-설정)
-
-        A. [access files](#access-files)
-
-        B. [Screen Recording](#Screen-Recording)
-
-        C. [Accessibility Access](#Accessibility-Access)
-
-
-- - -
-
-## 설치 방법
-
-### 폴더 배열 방법
+## 폴더 배열 방법
 수업에서 제공받은 sic.zip을 푼 장소에 본 .app file을 위치시켜 주십시오.
 그리고 '~/Applications' 위치에 'DOSBox.app'을 위치시켜 주십시오.
 
-## 실행 방법
+# 실행 방법
 
-### Main Window
+## Main Window
 
 
-#### Source Tab
+### Source Tab
 
-#### Object Tab
+### Object Tab
 
-#### Listing Tab
+### Listing Tab
 
-#### Working Tab
+### Working Tab
 
-#### 상단 버튼
+### 상단 버튼
 
-##### Refresh
+#### Refresh
 
-##### Save
+#### Save
 
-##### Assemble
+#### Assemble
 
-##### Simulate
+#### Simulate
 
-##### Close
+#### Close
 
-### Simulate Window
+## Simulate Window
 
-#### 저장 경로
+### 저장 경로
 
-#### DOSBox 상태
+### DOSBox 상태
 
-#### 명령어 매크로
+### 명령어 매크로
 
-#### 스크린샷
+### 스크린샷
 
-#### 상단 버튼
+### 상단 버튼
 
-##### Refresh
+#### Refresh
 
-##### Save
+#### Save
 
-##### Init
+#### Init
 
-### 권한 설정
+## 권한 설정
 
-#### access files
+### access files
 
-#### Screen Recording
+### Screen Recording
 
 #### Accessibility Access
