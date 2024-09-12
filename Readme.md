@@ -43,7 +43,8 @@ Assembly나 Simulate 기능 등 SICEditor.exe에서 이제 지원하지 않는 �
 # 설치 방법
 
 ## 폴더 배열 방법
-수업에서 제공받은 sic.zip을 푼 장소에 본 .app file을 위치시켜 주십시오.
+이 레포지토리 전체를 ZIP file로 다운로드하여 주십시오.
+그 후에 압축을 풀고, .app file을 수업에서 제공받은 sic.zip을 푼 장소에 위치시켜 주십시오.
 그리고 '~/Applications' 위치에 'DOSBox.app'을 위치시켜 주십시오.
 
 # 실행 방법
