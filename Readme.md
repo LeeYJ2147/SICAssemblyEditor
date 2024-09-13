@@ -69,7 +69,6 @@ Shift+Enter을 누를 시 윗칸으로 이동(맨 윗칸이면 움직이지 않�
 (0, 0)에서 키보드 커서가 깜빡일 때 Save 버튼을 누르면...  
 (0, 0)칸의 수정 사항은 **SRCFILE에 저장**되지 않습니다.
 
-
 - **Append 버튼**
 Append 버튼을 클릭할 시  
 표의 맨 마지막에 한 줄을 추가합니다.
@@ -87,24 +86,20 @@ Clear 버튼을 클릭할 시
 작성한 표 전체가 삭제됩니다.  
 SRCFILE은 삭제되지 않습니다.
 
-
 ### 2.1.2. Object Tab
 ![ObjectTab](https://github.com/user-attachments/assets/dde09603-acbb-4a3b-80e4-772024ca7c99)
 Object Tab에서는 DEVF2를 조회할 수 있습니다.  
 다른 기능은 없습니다.
-
 
 ### 2.1.3. Listing Tab
 ![ListingTab](https://github.com/user-attachments/assets/642eeea3-62a0-45b3-9c6d-0c3e1250dd40)
 Listing Tab에서는 LISFILE을 조회할 수 있습니다.  
 다른 기능은 없습니다.
 
-
 ### 2.1.4. Working Tab
 ![WorkingTab](https://github.com/user-attachments/assets/edce99f5-d78e-482b-8595-90ab70bb6e6a)
 Working Tab에서는 INTFILE을 조회할 수 있습니다.  
 다른 기능은 없습니다.
-
 
 ### 2.1.5. 상단 버튼
 상단 버튼, 이하 Refresh, Save, Assemble, Simulate, Close 버튼 총 5개의 기능 설명입니다.
@@ -116,11 +111,9 @@ SRCFILE, DEVF2, LISFILE, INTFILE을 새로 불러옵니다.
 만일 Assemble 등을 실행해서 DEVF2, LISFILE, INTFILE의 변화를 보고 싶으시다면  
 Refresh 버튼을 꼭 누르셔야 바뀝니다.
 
-
 #### Save
 Save 버튼을 누를 시  
 지금까지 바뀐 SRCFILE을 저장합니다.
-
 
 #### Assemble
 Assemble 버튼을 누를 시  
@@ -135,14 +128,16 @@ x 디스크를 할당하여 SICASM.exe를 실행하고,
 일련의 과정(del devf2, ren objfile devf2, l2u devf2 등)을 자동으로 수행한 뒤,  
 x 디스크 할당을 해제하고 DOSBox를 종료하지는 않습니다.
 
-
 #### Simulate
 Simulate 버튼을 누를 시  
-Simulate Window와 DOSBox를 엽니다.
-Simulate Window는 아래 [목차](#Simualte-Window)를 참고하여 주시기 바랍니다.
-DOSBox를 열어서 현재 .app file이 
+Simulate Window와 DOSBox를 엽니다.  
+Simulate Window는 아래 [목차](#Simualte-Window)를 참고하여 주시기 바랍니다.  
+DOSBox를 열어서 현재 .app file이 위치한 디렉토리 주소로 C 디스크를 할당한 뒤
+C:로 이동하고 명령어를 입력할 준비를 합니다.
 
 #### Close
+SRCFILE에 변경된 내용이 있다면 저장할 것인지 묻는 창을 띄우고,  
+변경된 내용이 없다면 창을 닫습니다.
 
 ## 2.2. Simulate Window
 
