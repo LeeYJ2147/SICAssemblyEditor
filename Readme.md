@@ -138,7 +138,9 @@ x 디스크 할당을 해제하고 DOSBox를 종료하지는 않습니다.
 
 #### Simulate
 Simulate 버튼을 누를 시  
-
+Simulate Window와 DOSBox를 엽니다.
+Simulate Window는 아래 [목차](#Simualte-Window)를 참고하여 주시기 바랍니다.
+DOSBox를 열어서 현재 .app file이 
 
 #### Close
 
