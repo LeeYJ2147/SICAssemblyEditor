@@ -179,7 +179,7 @@ ${\bf{\color{red}주의사항}}$
 이는 [2.3.3. Accessibility Access](#233-Accessibility-Access)를 참고하여 주시기 바랍니다.
 
 ### 2.2.4. 스크린샷
-스크린샷은 현재 DOSBox 창을 캡쳐하는 기능입니다.  
+스크린샷은 현재 DOSBox 창을 캡쳐하는 기능입니다.  
 스크린샷 버튼을 누르면 제목을 입력하라는 창이 나오는데 거기에 제목을 입력해주시면,  
 DOSBox 창을 캡쳐하여 YYYYMMDDHHMMSS_{제목}.png의 이름으로 저장합니다.  
 저장되는 위치는 'SIC Assembly Editor.app'이 위치한 디렉토리에 ScreenShots란 폴더가 만들어질 겁니다. 그곳에 저장됩니다.
@@ -209,15 +209,15 @@ Init 버튼은 명령어 매크로들을 초기화하는 기능입니다.
 ## 2.3. 권한 설정
 
 ### 2.3.1. access files
-![access files](https://github.com/user-attachments/assets/eac419f8-b5a0-4249-8c8b-a204ac401ca7)
+![access files](https://github.com/user-attachments/assets/eac419f8-b5a0-4249-8c8b-a204ac401ca7)  
 프로그램을 실행할 때 SRCFILE, LISFILE, INTFILE 등을 불러오는 기능이 실행됩니다.  
 이에 따라 file에 access하는 권한이 필요합니다.
 
 ### 2.3.2. Screen Recording
-![screen recording](https://github.com/user-attachments/assets/7d645bc0-b38a-4051-8e93-0863bc92e906)
+![screen recording](https://github.com/user-attachments/assets/7d645bc0-b38a-4051-8e93-0863bc92e906)  
 화면을 캡쳐할 때 Screen Recording 권한이 필요합니다.  
 이 권한을 세팅하면 프로그램을 다시 껐다 켜야하는데, 껐다 키면 됩니다.
 
 ### 2.3.3. Accessibility Access
-![Accessibility Access](https://github.com/user-attachments/assets/7ee0f8a8-0bdb-468b-a327-78b74dae286f)
+![Accessibility Access](https://github.com/user-attachments/assets/7ee0f8a8-0bdb-468b-a327-78b74dae286f)  
 명령어 매크로를 입력할 때 필요한 권한입니다.  
