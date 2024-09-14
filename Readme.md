@@ -50,6 +50,9 @@ Assembly나 Simulate 기능 등 SICEditor.exe에서 이제 지원하지 않는 �
 
 # 2. 사용 방법
 
+우선 이 프로그램을 실행하시면 권한 설정을 하라는 창이 뜹니다.  
+이는 [2.3.1. access files](#231-access-files)를 참고하여 주시기 바랍니다.
+
 ## 2.1. Main Window
 앱을 실행했을 때 띄워지는 창을 Main Window라고 하겠습니다.
 이하는 본 Main Window에 대한 각 기능 설명입니다.
@@ -67,7 +70,11 @@ Shift+Enter을 누를 시 윗칸으로 이동(맨 윗칸이면 움직이지 않�
 **칸을 편집하신 후, 꼭 다른 칸으로 이동하셔야 저장이 됩니다.**  
 예를 들어 (0, 0) 칸을 수정한 다음,  
 (0, 0)에서 키보드 커서가 깜빡일 때 Save 버튼을 누르면...  
-(0, 0)칸의 수정 사항은 **SRCFILE에 저장**되지 않습니다.
+(0, 0)칸의 수정 사항은 ${\bf{\color{red}SRCFILE에\ 저장되지\ 않}}$습니다.
+
+마지막으로, **오타 검출 기능**을 넣어두었습니다.  
+만일 SIC/EX의 operation이 아닌 operation을 입력하였다면 빨간 글씨로 바뀝니다.  
+operation을 입력하다보면 오타가 입력될 수 있는데, 이를 쉽게 볼 수 있도록 하였습니다.
 
 - **Append 버튼**
 Append 버튼을 클릭할 시  
@@ -140,27 +147,75 @@ SRCFILE에 변경된 내용이 있다면 저장할 것인지 묻는 창을 띄�
 변경된 내용이 없다면 창을 닫습니다.
 
 ## 2.2. Simulate Window
+![Simulate Window](https://github.com/user-attachments/assets/3419b72f-07e3-4059-bb7a-257661ea53e8)
+[Main Window](#Main-Window)에서 Simulate 버튼을 누를 시 보이는 Simulate Window에 대한 설명입니다.
 
 ### 2.2.1. 저장 경로
+sic folder의 위치를 명시하는 곳입니다.
+
+Init 버튼을 누르면, 현재 'SIC Assembly Editor.app'이 위치한 디렉토리를 보여줍니다.  
+옆의 folder icon을 눌러 직접 경로를 지정하실 수도 있습니다.  
+혹은 회색 박스를 더블클릭하여 내용을 수정하실 수 있습니다.  
 
 ### 2.2.2. DOSBox 상태
+DOSBox가 켜져있나 확인하는 곳입니다.  
+Simulate Winodw 내 각각의 버튼을 누를 때 또는 새로고침 버튼을 누를 때마다 확인하는 과정을 거칩니다.
 
 ### 2.2.3. 명령어 매크로
+각각의 명령어를 실행할 수 있습니다.  
+각각의 명령어는 회색 박스를 더블클릭하여 수정하실 수 있습니다.  
+$는 명령어 구분자로, 'mount c ~/sic/sic'와 'C:'를 매크로로 하고 싶다면,  
+'mount c ~/sic/sic$C:'와 같은 형식으로 수정하시면 됩니다.  
+$로 구분된 명령어는 엔터를 치고, 0.5초를 기다린 후 실행됩니다.
+
+${\bf{\color{red}주의사항}}$  
+명령어가 실행되면 DOSBox 창이 포커싱(선택)되는데, 이를 유지해주시기 바랍니다.  
+명령어 매크로를 실행하신 후 다른 프로그램을 선택하면 그 프로그램의 입력 박스에 명령어가 입력됩니다.  
+고로, 명령어 매크로를 실행하신 후 매크로가 끝날 때까지 대기 부탁드립니다.
+
+그리고, 이 기능을 처음 실행하시면 권한 설정을 하라는 창이 뜹니다.  
+이는 [2.3.3. Accessibility Access](#233-Accessibility-Access)를 참고하여 주시기 바랍니다.
 
 ### 2.2.4. 스크린샷
+스크린샷은 현재 DOSBox 창을 캡쳐하는 기능입니다.  
+스크린샷 버튼을 누르면 제목을 입력하라는 창이 나오는데 거기에 제목을 입력해주시면,  
+DOSBox 창을 캡쳐하여 YYYYMMDDHHMMSS_{제목}.png의 이름으로 저장합니다.  
+저장되는 위치는 'SIC Assembly Editor.app'이 위치한 디렉토리에 ScreenShots란 폴더가 만들어질 겁니다. 그곳에 저장됩니다.
+
+이 기능을 처음 실행하시면 권한 설정을 하라는 창이 뜹니다.  
+이는 [2.3.2. Screen Recording](#232-Screen-Recording)을 참고하여 주시기 바랍니다.
+
+스크린샷 버튼 밑에 리스트 형식으로 캡쳐된 파일이 보일텐데, 요소를 **클릭**하면 옆 Screenshot Preview 부분에 보여집니다.  
+마우스로 클릭하셔야 보입니다. 방향키 위아래로 움직여도 바뀌지 않습니다.
 
 ### 2.2.5. 상단 버튼
 
 #### Refresh
+Refresh 버튼은 Save된 명령어 매크로들을 불러오는 기능입니다.  
+프로그램 내부에 저장된 명령어들을 불러옵니다.
 
 #### Save
+Save 버튼은 현재 창에 입력된 매크로들을 저장하는 기능입니다.  
+프로그램 내부에서 저장됩니다.
 
 #### Init
+Init 버튼은 명령어 매크로들을 초기화하는 기능입니다.  
+저장 경로를 알아서 가져오고, 1부터 7까지 명령어들을 기본 상태로 세팅합니다.  
+프로그램을 처음 실행하시면 PLEASE CLICK INIT BUTTON이라고 뜰텐데,  
+말 그대로 Init 버튼을 클릭하시면 알아서 세팅됩니다.
 
 ## 2.3. 권한 설정
 
 ### 2.3.1. access files
+![access files](https://github.com/user-attachments/assets/eac419f8-b5a0-4249-8c8b-a204ac401ca7)
+프로그램을 실행할 때 SRCFILE, LISFILE, INTFILE 등을 불러오는 기능이 실행됩니다.  
+이에 따라 file에 access하는 권한이 필요합니다.
 
 ### 2.3.2. Screen Recording
+![screen recording](https://github.com/user-attachments/assets/7d645bc0-b38a-4051-8e93-0863bc92e906)
+화면을 캡쳐할 때 Screen Recording 권한이 필요합니다.  
+이 권한을 세팅하면 프로그램을 다시 껐다 켜야하는데, 껐다 키면 됩니다.
 
 ### 2.3.3. Accessibility Access
+![Accessibility Access](https://github.com/user-attachments/assets/7ee0f8a8-0bdb-468b-a327-78b74dae286f)
+명령어 매크로를 입력할 때 필요한 권한입니다.  
