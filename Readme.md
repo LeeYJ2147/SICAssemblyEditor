@@ -76,19 +76,21 @@ Shift+Enter을 누를 시 윗칸으로 이동(맨 윗칸이면 움직이지 않�
 만일 SIC/EX의 operation이 아닌 operation을 입력하였다면 빨간 글씨로 바뀝니다.  
 operation을 입력하다보면 오타가 입력될 수 있는데, 이를 쉽게 볼 수 있도록 하였습니다.
 
-- **Append 버튼**
+이하는 표 우측 상단의 버튼 4개의 설명입니다.  
+
+- **Append 버튼**  
 Append 버튼을 클릭할 시  
 표의 맨 마지막에 한 줄을 추가합니다.
 
-- **Insert 버튼**
+- **Insert 버튼**  
 Insert 버튼을 클릭할 시  
 현재 선택된 Cell의 줄 바로 밑에 한 줄을 추가합니다.
 
-- **Delete 버튼**
+- **Delete 버튼**  
 Delete 버튼을 클릭할 시  
 현재 선택된 Cell 한 줄을 삭제합니다.
 
-- **Clear 버튼**
+- **Clear 버튼**  
 Clear 버튼을 클릭할 시  
 작성한 표 전체가 삭제됩니다.  
 SRCFILE은 삭제되지 않습니다.
